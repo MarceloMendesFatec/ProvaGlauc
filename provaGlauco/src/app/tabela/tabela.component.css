@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+table{
+  margin: none;
+  border-radius: 6px;
+  text-align: center;
+  background-color: aliceblue;
+  border: solid;
+  border-color: gray;
+}
+
+.lista{
+  box-shadow: 10px 15px 36px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 15px 36px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 15px 36px 0px rgba(0,0,0,0.75);
+}
+

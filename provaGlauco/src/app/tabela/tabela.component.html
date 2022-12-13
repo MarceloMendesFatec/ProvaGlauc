@@ -2,17 +2,22 @@
 
 
   <div class="lista">
+    <table>
+      <tr>
+        <th>User ID</th>
+        <th>Id</th>
+        <th>title</th>
+        <th>completed</th>
+      </tr>
+    <tr *ngFor=" let lista of data">
+      <td> {{lista.userId}}</td>
+      <td> {{lista.id}}</td>
+      <td> {{lista.title}}</td>
+      <td> {{lista.completed}}</td>
+    </tr>
+    </table>
 
-    <Table>
-        <tr></tr>
-    </Table>
-    <ul *ngFor=" let lista of user">
 
-        <p>UserID: {{lista.userId}}</p>
-        <p>id: {{lista.id}}</p>
-        <p>title: {{lista.title}}</p>
-        <p>completed: {{lista.completed}</p>
-    </ul>
   </div>
 
 

@@ -17,9 +17,9 @@ export class TabelaComponent implements OnInit {
     this.showData();
   }
 
-  user?: ToDo[] |any;
+  data?: ToDo[] | any ;
 
   showData(){
-    this.todoservice.getData().subscribe(user => this.user = user)
+    this.todoservice.getData().subscribe(userTODO => this.data = userTODO)
   }
 }
