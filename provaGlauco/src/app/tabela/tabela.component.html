@@ -1,7 +1,19 @@
 <div class="container">
 
 
-  
+  <div class="lista">
+
+    <Table>
+        <tr></tr>
+    </Table>
+    <ul *ngFor=" let lista of user">
+
+        <p>UserID: {{lista.userId}}</p>
+        <p>id: {{lista.id}}</p>
+        <p>title: {{lista.title}}</p>
+        <p>completed: {{lista.completed}</p>
+    </ul>
+  </div>
 
 
 </div>

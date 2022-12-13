@@ -1,6 +1,6 @@
+import { ToDOService } from './../to-do.service';
 
 import { Component, OnInit } from '@angular/core';
-import { ToDOService } from '../to-do.service';
 import { Interface } from 'readline';
 import { ToDo } from 'src/interface';
 
@@ -11,11 +11,15 @@ import { ToDo } from 'src/interface';
 })
 export class TabelaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private todoservice: ToDOService) { }
 
   ngOnInit(): void {
+    this.showData();
   }
 
   user?: ToDo[] |any;
-  
+
+  showData(){
+    this.todoservice.getData().subscribe(user => this.user = user)
+  }
 }
